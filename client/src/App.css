@@ -1,6 +1,16 @@
-.mainx {
+.dash {
   border: solid black;
-  height: 90%;
-  width: 300px;
+  height: 100%;
+  width: 400px;
   background-color: #0d160b;
+}
+main {
+  display: flex;
+  height: 800px;
+}
+
+.map-container {
+  height: 876px;
+  width: 1008px;
+  border: solid;
 }
