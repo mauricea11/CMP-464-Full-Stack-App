@@ -3,6 +3,7 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import mapboxgl from "mapbox-gl";
 import "./App.css";
+import Searchbar from "./components/Searchbar";
 
 function App() {
   const [close, setclose] = useState(false);
@@ -12,7 +13,9 @@ function App() {
   const [lat, setLat] = useState(42.35);
   const [zoom, setZoom] = useState(9);
 
-  mapboxgl.accessToken = process.env.ACCESS_TOKEN_MAPBOX;
+  mapboxgl.accessToken =
+    "pk.eyJ1Ijoic2piZGpkamQiLCJhIjoiY2xxYTIwcXAyMXRycDJqbnZwcDN1OW1meSJ9.qZVNrmQcecc39OP6IJosjQ";
+
   useEffect(() => {
     if (map.current) return; // initialize map only once
     map.current = new mapboxgl.Map({
@@ -26,7 +29,7 @@ function App() {
   return (
     <main>
       <div className={close ? "dash" : "nothing"}>
-        <button onClick={(e) => setclose(!close)}></button>
+        <Searchbar />
       </div>
       <div id="maparea" ref={mapContainer} className="map-container"></div>
     </main>
