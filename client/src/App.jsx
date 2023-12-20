@@ -188,6 +188,7 @@ function App() {
     <main>
       <div className={"dash"}>
         <Searchbar />
+        <div id="search-results"></div>
       </div>
       <div id="maparea" ref={mapContainer} className="map-container"></div>
     </main>
