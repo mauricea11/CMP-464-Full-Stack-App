@@ -2,3 +2,19 @@
   border: solid;
   background-color: grey;
 }
+.inputwrapper {
+  background-color: white;
+  display: flex;
+  height: 42px;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 4px;
+}
+input {
+  height: 28px;
+  margin-left: 5px;
+  width: 340px;
+}
+input:focus {
+  outline: none;
+}
